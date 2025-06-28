@@ -14,7 +14,7 @@ import {
   QueryClient,
 } from "@tanstack/react-query";
 import { Toaster } from "react-hot-toast";
-import DEXContainer from "./components/DEXContainer";
+import DEXContainer from "./components/DexContainer";
 
 // Konfigurasi Chain Monad Testnet
 const monadTestnet: Chain = {

@@ -1,15 +1,14 @@
-/* eslint-disable react-refresh/only-export-components */
 import SIMPLE_DEX_ABI_JSON from "./SIMPLE_DEX_ABI.json"
 import ERC20_ABI_JSON from "./ERC20_ABI.json"
 
 export const SIMPLE_DEX_ABI = SIMPLE_DEX_ABI_JSON;
 export const ERC20_ABI = ERC20_ABI_JSON;
 
-// Contract addresses (update dengan alamat yang sudah deployed)
+// Contract addresses dari environment variables
 export const CONTRACTS = {
-  SIMPLE_DEX: "0x70bDD0f7e01DEe803147ead041dE23a531A71CBf",
-  CAMPUS_COIN: "0xEBAa841c5f97Ff097e61eea151dFA03640A6CC78",
-  MOCK_USDC: "0x786Ca7D3a2E53f0d5F7bB6848E03b60Dae9a3719",
+  SIMPLE_DEX: import.meta.env.VITE_SIMPLE_DEX_ADDRESS,
+  CAMPUS_COIN: import.meta.env.VITE_CAMPUS_COIN_ADDRESS,
+  MOCK_USDC: import.meta.env.VITE_MOCK_USDC_ADDRESS,
 } as const;
 
 // Token configurations
